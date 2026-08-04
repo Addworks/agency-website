@@ -270,23 +270,23 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Live App 4: RentIt */}
-            <a href="https://rent-it-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
+                        {/* Live App 4: AugmentMyTeam */}
+            <a href="https://augment-my-team.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
               <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
                 <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">🔄</div>
+                  <div className="text-2xl">💼</div>
                   <div className="flex flex-col items-end gap-1.5">
                     <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Staged
                     </span>
                     <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
-                      Sustainability / Circular Economy
+                      SaaS / GCC Nearshore Talent
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">RentIt</h3>
+                <h3 className="text-2xl font-bold mb-3 text-white">AugmentMyTeam</h3>
                 <p className="text-zinc-400 text-sm font-light leading-relaxed mb-6">
-                  Unlocking idle capital via sharing economy principles. A hyper-local peer-to-peer asset portal for heavy machinery, utility tools, and hardware, reducing unnecessary consumer and manufacturing waist.
+                  Bypassing the GCC tech talent crisis. We supply high-growth startups in Abu Dhabi and Riyadh with pre-vetted, elite South African software engineers operating in your exact timezone with a 60% operational cost arbitrage.
                 </p>
                 <div className="text-zinc-300 group-hover:text-emerald-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
                   Launch Platform <span>&rarr;</span>
@@ -300,17 +300,17 @@ export default function Home() {
             <h3 className="text-xs font-black mb-10 text-center text-zinc-500 uppercase tracking-widest">In Development & Stealth Channels</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
+                <div className="text-zinc-300 text-xl mb-3">🔄</div>
+                <h4 className="font-bold text-white mb-2 text-base">RentIt (Circular PropTech)</h4>
+                <p className="text-xs text-zinc-500 font-light leading-relaxed">
+                  Unlocking idle capital via sharing economy principles. A hyper-local peer-to-peer asset portal for heavy machinery, utility tools, and hardware, reducing unnecessary consumer and manufacturing footprint.
+                </p>
+              </div>
+              <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
                 <div className="text-zinc-300 text-xl mb-3">🪙</div>
                 <h4 className="font-bold text-white mb-2 text-base">Demandz (FinTech)</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
                   Sharia-compliant procurement demand coordination. Pools SME buying force to execute programmatic reverse-auctions, securing up to 20% savings.
-                </p>
-              </div>
-              <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">💼</div>
-                <h4 className="font-bold text-white mb-2 text-base">AugmentMyTeam</h4>
-                <p className="text-xs text-zinc-500 font-light leading-relaxed">
-                  Vetted talent bridge. Placements of elite, nearshore South African engineers within high-velocity GCC startups operating on a 1-hour timezone delta.
                 </p>
               </div>
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
@@ -453,11 +453,11 @@ export default function Home() {
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-zinc-300 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300"
                     >
                       <option value="Custom Software Development (Agency)">Custom Dev (Agency)</option>
-                      <option value="FractionalHub">FractionalHub (Talent)</option>
+                      <option value="AugmentMyTeam">AugmentMyTeam (Talent)</option>
                       <option value="Freighter Africa">Freighter Africa (Logistics)</option>
                       <option value="RentIt">RentIt (Circular Economy)</option>
                       <option value="AquaFlow">AquaFlow (Climate IoT)</option>
-                      <option value="Intent/Demandz">Demandz (Sharia FinTech)</option>
+                      <option value="Demandz">Demandz (Sharia FinTech)</option>
                     </select>
                   </div>
                 </div>
