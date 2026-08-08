@@ -9,6 +9,7 @@ export default function Home() {
   // Clean, unified form states
   const [contactName, setContactName] = useState("");
   const [contactEmail, setContactEmail] = useState("");
+  const [contactPhone, setContactPhone] = useState("");
   const [contactCompany, setContactCompany] = useState("");
   const [productInterest, setProductInterest] = useState("Custom Software Development (Agency)");
   const [budgetRange, setBudgetRange] = useState("Undetermined");
@@ -34,6 +35,7 @@ export default function Home() {
         body: JSON.stringify({
           name: contactName,
           email: contactEmail,
+          phone: contactPhone,
           company: contactCompany,
           productInterest: productInterest,
           budget: budgetRange,
@@ -48,6 +50,7 @@ export default function Home() {
         // Clear form
         setContactName("");
         setContactEmail("");
+        setContactPhone("");
         setContactCompany("");
         setContactMessage("");
         setProductInterest("Custom Software Development (Agency)");
@@ -68,18 +71,6 @@ export default function Home() {
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-emerald-950/10 rounded-full filter blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-10 left-1/4 w-[400px] h-[400px] bg-amber-950/10 rounded-full filter blur-[120px] animation-delay-2000"></div>
-      </div>
-
-      {/* Elegant, Professional Announcement Bar (Gold & Slate accents) */}
-      <div className="relative z-30 bg-zinc-900 border-b border-zinc-800 py-2.5 px-4 text-center text-xs tracking-wider uppercase font-bold text-zinc-300">
-        <span className="inline-flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-          <span>Hub71 Admissions Phase:</span> 
-          <span className="font-light text-zinc-400 normal-case">Review our parastatal-validated cargo & IoT telemetry</span>
-          <a href="#sandbox" className="underline hover:text-emerald-400 font-bold transition duration-300">
-            Durban Port Sandbox Demo &rarr;
-          </a>
-        </span>
       </div>
 
       {/* Navigation – Ultra Clean, Razor Sharp */}
@@ -449,20 +440,31 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Target Product/Interest</label>
-                    <select 
-                      value={productInterest}
-                      onChange={(e) => setProductInterest(e.target.value)}
-                      className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-zinc-300 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300"
-                    >
-                      <option value="Custom Software Development (Agency)">Custom Dev (Agency)</option>
-                      <option value="AugmentMyTeam">AugmentMyTeam (Talent)</option>
-                      <option value="Freighter Africa">Freighter Africa (Logistics)</option>
-                      <option value="RentIt">RentIt (Circular Economy)</option>
-                      <option value="AquaFlow">AquaFlow (Climate IoT)</option>
-                      <option value="Demandz">Demandz (Sharia FinTech)</option>
-                    </select>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Phone Number</label>
+                    <input 
+                      type="tel" 
+                      value={contactPhone}
+                      onChange={(e) => setContactPhone(e.target.value)}
+                      className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
+                      placeholder="+27 (82) 123-4567"
+                    />
                   </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Target Product/Interest</label>
+                  <select 
+                    value={productInterest}
+                    onChange={(e) => setProductInterest(e.target.value)}
+                    className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-zinc-300 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300"
+                  >
+                    <option value="Custom Software Development (Agency)">Custom Dev (Agency)</option>
+                    <option value="AugmentMyTeam">AugmentMyTeam (Talent)</option>
+                    <option value="Freighter Africa">Freighter Africa (Logistics)</option>
+                    <option value="RentIt">RentIt (Circular Economy)</option>
+                    <option value="AquaFlow">AquaFlow (Climate IoT)</option>
+                    <option value="Demandz">Demandz (Sharia FinTech)</option>
+                  </select>
                 </div>
 
                 <div>

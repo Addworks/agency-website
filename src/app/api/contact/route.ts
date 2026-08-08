@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, company, message, productInterest, budget } = body;
+    const { name, email, company, phone, message, productInterest, budget } = body;
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -50,6 +50,10 @@ export async function POST(request: Request) {
                 <td style="padding: 8px 0; color: #0f172a;"><a href="mailto:${email}" style="color: #10b981; text-decoration: none;">${email}</a></td>
               </tr>
               <tr>
+                <td style="padding: 8px 0; font-weight: bold; color: #4b5563;">Phone:</td>
+                <td style="padding: 8px 0; color: #0f172a;">${phone || 'N/A'}</td>
+              </tr>
+              <tr>
                 <td style="padding: 8px 0; font-weight: bold; color: #4b5563;">Company:</td>
                 <td style="padding: 8px 0; color: #0f172a;">${company || 'N/A'}</td>
               </tr>
@@ -93,7 +97,7 @@ export async function POST(request: Request) {
         const leadConfirmationHtml = `
           <div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 25px; border: 1px solid #e4e4e7; border-radius: 16px; background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
             <div style="text-align: center; margin-bottom: 20px;">
-              <span style="font-size: 24px; font-weight: 900; letter-spacing: -0.05em; color: #0f172a;">NAK <span style="color: #10b981; font-weight: 300;">GROUP</span></span>
+              <span style="font-size: 24px; font-weight: 900; letter-spacing: -0.05em; color: #0f172a;">NAK <span style="color: #10b981; font-weight: 300;">TECH GROUP</span></span>
             </div>
             <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 12px; margin-top: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.025em;">Technical Inquiry Confirmed 🚀</h2>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Hi ${firstName},</p>
@@ -104,6 +108,7 @@ export async function POST(request: Request) {
               <p style="margin: 0; font-weight: bold; color: #4b5563; margin-bottom: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">Your Registered Parameters:</p>
               <p style="margin: 0; color: #1e293b; font-size: 14px; line-height: 1.6;">
                 <strong>Company:</strong> ${company || 'N/A'}<br>
+                <strong>Phone Number:</strong> ${phone || 'N/A'}<br>
                 <strong>Target Platform / Interest:</strong> ${productInterest || 'Custom Software Development'}<br>
                 <strong>Budget Framework:</strong> ${budget || 'Undetermined'}
               </p>
@@ -154,12 +159,15 @@ export async function POST(request: Request) {
 
     if (hubspotAccessToken) {
       try {
+        // Standard CRM Contact Properties
+        // Note: 'message' is NOT a standard contact property in HubSpot. We must map it to 'description'.
         const stdProperties = {
           email: email,
           firstname: firstName,
           lastname: lastName,
           company: company || '',
-          message: message
+          phone: phone || '',
+          description: message || ''
         };
 
         const customProperties = {
