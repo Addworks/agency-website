@@ -1,4 +1,4 @@
-﻿import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
@@ -154,34 +154,51 @@ export async function POST(request: Request) {
 
     if (hubspotAccessToken) {
       try {
-        const hubspotPayload = {
-          properties: {
-            email: email,
-            firstname: firstName,
-            lastname: lastName,
-            company: company || '',
-            message: message,
-            lead_source___product_interest: productInterest || 'Custom Software Development (Agency)',
-            lead_quality___budget__usd_: budget || 'Undetermined'
-          }
+        const stdProperties = {
+          email: email,
+          firstname: firstName,
+          lastname: lastName,
+          company: company || '',
+          message: message
         };
 
-        // Create contact
-        const hsResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
+        const customProperties = {
+          ...stdProperties,
+          lead_source___product_interest: productInterest || 'Custom Software Development (Agency)',
+          lead_quality___budget__usd_: budget || 'Undetermined'
+        };
+
+        // 1. Try with full custom properties
+        let hsResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${hubspotAccessToken}`,
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(hubspotPayload)
+          body: JSON.stringify({ properties: customProperties })
         });
 
-        const hsData = await hsResponse.json();
+        let hsData = await hsResponse.json();
+
+        // 2. Fail-Safe Fallback: If custom fields fail to map (400 Bad Request), retry with standard CRM properties only!
+        if (!hsResponse.ok && hsResponse.status === 400) {
+          console.warn('[HubSpot API] Custom properties validation mismatch. Falling back to standard CRM fields...');
+          hsResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${hubspotAccessToken}`,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ properties: stdProperties })
+          });
+          hsData = await hsResponse.json();
+        }
+
         hubspotSuccess = hsResponse.ok;
         hubspotResult = hsData;
 
         // Auto-create a linked Deal for inbound web inquiries to match scrapers!
-        if (hsResponse.ok && hsData.id) {
+        if (hubspotSuccess && hsData.id) {
           try {
             const dealPayload = {
               properties: {
@@ -244,4 +261,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
