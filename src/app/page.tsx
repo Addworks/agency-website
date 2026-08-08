@@ -137,7 +137,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-          NAK Group is a premium, dual-engine **Venture Studio**. We deliver elite nearshore software engineering to GCC enterprises with zero timezone friction, while building and scaling a proprietary, self-funded portfolio.
+          NAK Tech Group is a premium, dual-engine **Venture Studio**. We deliver elite nearshore software engineering to GCC enterprises with zero timezone friction, while building and scaling a proprietary, self-funded portfolio.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <a href="#contact" className="bg-zinc-100 hover:bg-white text-zinc-950 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition duration-300 shadow-xl border border-white">
@@ -161,7 +161,7 @@ export default function Home() {
                 Validating Technical Capacity at State Level.
               </h2>
               <p className="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
-                We design and build production-grade architectures. Through our corporate partner network, NAK Group solutions are used to service two massive state-level entities: **Transnet Port Terminals** (South Africa’s national logistics parastatal) and the **Department of Education** (provincial state level). 
+                We design and build production-grade architectures. Through our corporate partner network, NAK Tech Group solutions are used to service two massive state-level entities: **Transnet Port Terminals** (South Africa’s national logistics parastatal) and the **Department of Education** (provincial state level). 
               </p>
               <p className="text-zinc-500 text-xs font-light">
                 Explore our live, active cargo tracking simulation integrating real-time IoT telemetry, predictive route deviation triggers, and automated parastatal work-order dispatch.
@@ -391,7 +391,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">Ready to Partner?</h2>
             <p className="text-lg text-zinc-400 font-light">
-              Secure an elite engineering team trained under NAK Group's production standards to design, build, and deploy your next-generation platform.
+              Secure an elite engineering team trained under NAK Tech Group's production standards to design, build, and deploy your next-generation platform.
             </p>
           </div>
           
@@ -429,7 +429,7 @@ export default function Home() {
                       value={contactEmail}
                       onChange={(e) => setContactEmail(e.target.value)}
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
-                      placeholder="addworks@nakgroup.com"
+                      placeholder="addworks@naktechgroup.com"
                     />
                   </div>
                 </div>
@@ -442,7 +442,7 @@ export default function Home() {
                       value={contactCompany}
                       onChange={(e) => setContactCompany(e.target.value)}
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
-                      placeholder="NAK Group Ltd"
+                      placeholder="NAK Tech Group Ltd"
                     />
                   </div>
                   <div>
@@ -501,7 +501,7 @@ export default function Home() {
             )}
           </div>
           <p className="text-zinc-500 mt-12 text-center text-xs tracking-wider">
-            OR INQUIRE DIRECTLY VIA <a href="mailto:hello@nakgroup.com" className="text-emerald-400 hover:underline">HELLO@NAKGROUP.COM</a>
+            OR INQUIRE DIRECTLY VIA <a href="mailto:hello@naktechgroup.com" className="text-emerald-400 hover:underline">HELLO@NAKGROUP.COM</a>
           </p>
         </div>
       </footer>

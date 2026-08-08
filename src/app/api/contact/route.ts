@@ -67,7 +67,7 @@ export async function POST(request: Request) {
               <p style="margin: 0; color: #334155; line-height: 1.6; white-space: pre-wrap;">${message}</p>
             </div>
             <div style="margin-top: 30px; border-top: 1px solid #e4e4e7; padding-top: 15px; text-align: center; font-size: 12px; color: #94a3b8;">
-              NAK Group Venture Studio Lead Dispatcher. Locally compliant & secure.
+              NAK Tech Group Venture Studio Lead Dispatcher. Locally compliant & secure.
             </div>
           </div>
         `;
@@ -97,7 +97,7 @@ export async function POST(request: Request) {
             </div>
             <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 12px; margin-top: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.025em;">Technical Inquiry Confirmed 🚀</h2>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Hi ${firstName},</p>
-            <p style="color: #334155; line-height: 1.6; font-size: 15px;">Thank you for reaching out to NAK Group. We have successfully received your project parameters and technical scoping request.</p>
+            <p style="color: #334155; line-height: 1.6; font-size: 15px;">Thank you for reaching out to NAK Tech Group. We have successfully received your project parameters and technical scoping request.</p>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Our core engineering committee is already reviewing your requirements. <strong>One of our technical leads will contact you shortly</strong> (typically within 1 business day) to discuss your architecture or coordinate a brief technical scoping session.</p>
             
             <div style="margin-top: 25px; padding: 15px; background-color: #f8fafc; border-left: 4px solid #10b981; border-radius: 6px;">
@@ -112,10 +112,10 @@ export async function POST(request: Request) {
             <p style="color: #334155; line-height: 1.6; font-size: 15px; margin-top: 25px;">We look forward to collaborating with you and bridging high-impact software design with your business goals.</p>
             
             <p style="color: #0f172a; font-weight: bold; margin-top: 30px; margin-bottom: 0; font-size: 15px;">Best regards,</p>
-            <p style="color: #4b5563; margin-top: 5px; font-size: 14px; line-height: 1.4;">The NAK Group Engineering Committee<br><a href="https://nakgroup.com" style="color: #10b981; text-decoration: none; font-weight: bold;">nakgroup.com</a></p>
+            <p style="color: #4b5563; margin-top: 5px; font-size: 14px; line-height: 1.4;">The NAK Tech Group Engineering Committee<br><a href="https://naktechgroup.com" style="color: #10b981; text-decoration: none; font-weight: bold;">naktechgroup.com</a></p>
             
             <div style="margin-top: 35px; border-top: 1px solid #e4e4e7; padding-top: 15px; text-align: center; font-size: 11px; color: #94a3b8;">
-              This is an automated confirmation of your secure inquiry. NAK Group Venture Studio.
+              This is an automated confirmation of your secure inquiry. NAK Tech Group Venture Studio.
             </div>
           </div>
         `;
@@ -130,7 +130,7 @@ export async function POST(request: Request) {
           body: JSON.stringify({
             from: resendFromEmail,
             to: email,
-            subject: `We've received your request - NAK Group`,
+            subject: `We've received your request - NAK Tech Group`,
             html: leadConfirmationHtml
           })
         });
