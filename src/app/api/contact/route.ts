@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+﻿import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
       try {
         const emailHtml = `
           <div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e4e4e7; rounded: 12px; background-color: #ffffff;">
-            <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 10px; margin-top: 0;">New Inbound Lead Received dYs?</h2>
+            <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 10px; margin-top: 0;">New Inbound Lead Received 🚀</h2>
             <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
               <tr>
                 <td style="padding: 8px 0; font-weight: bold; color: #4b5563; width: 35%;">Name:</td>
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
             body: JSON.stringify({
               from: resendFromEmail,
               to: recipient,
-              subject: `s [NAK LEAD] ${firstName} from ${company || 'Inbound'} (${productInterest || 'Agency'})`,
+              subject: `🚀 [NAK LEAD] ${firstName} from ${company || 'Inbound'} (${productInterest || 'Agency'})`,
               html: emailHtml
             })
           })
@@ -95,7 +95,7 @@ export async function POST(request: Request) {
             <div style="text-align: center; margin-bottom: 20px;">
               <span style="font-size: 24px; font-weight: 900; letter-spacing: -0.05em; color: #0f172a;">NAK <span style="color: #10b981; font-weight: 300;">GROUP</span></span>
             </div>
-            <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 12px; margin-top: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.025em;">Technical Inquiry Confirmed dY%</h2>
+            <h2 style="color: #0f172a; border-bottom: 2px solid #10b981; padding-bottom: 12px; margin-top: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.025em;">Technical Inquiry Confirmed 🚀</h2>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Hi ${firstName},</p>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Thank you for reaching out to NAK Group. We have successfully received your project parameters and technical scoping request.</p>
             <p style="color: #334155; line-height: 1.6; font-size: 15px;">Our core engineering committee is already reviewing your requirements. <strong>One of our technical leads will contact you shortly</strong> (typically within 1 business day) to discuss your architecture or coordinate a brief technical scoping session.</p>
@@ -244,3 +244,4 @@ export async function POST(request: Request) {
     );
   }
 }
+
