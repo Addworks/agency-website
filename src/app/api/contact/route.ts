@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
     // Resend Setup (using env variable strictly)
     const resendApiKey = process.env.RESEND_API_KEY;
-    const resendFromEmail = process.env.RESEND_FROM_EMAIL || 'briefing@augmentmyteam.com';
+    const resendFromEmail = process.env.RESEND_FROM_EMAIL || 'briefing@naktechgroup.com';
 
     let resendSuccess = false;
     let resendError = null;
