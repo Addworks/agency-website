@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <div className="bg-slate-950 text-zinc-100 font-sans antialiased scroll-smooth selection:bg-emerald-500 selection:text-white">
-      {/* Clean, Subtle Backlight Gradient — Removing noisy purple blobs */}
+      {/* Clean, Subtle Backlight Gradient */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-emerald-950/10 rounded-full filter blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-10 left-1/4 w-[400px] h-[400px] bg-amber-950/10 rounded-full filter blur-[120px] animation-delay-2000"></div>
@@ -82,7 +82,7 @@ export default function Home() {
         </span>
       </div>
 
-      {/* Navigation — Ultra Clean, Razor Sharp */}
+      {/* Navigation – Ultra Clean, Razor Sharp */}
       <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-20 backdrop-blur-md bg-slate-950/60 sticky top-0 border-b border-zinc-900">
         <div className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
           NAK <span className="text-emerald-500 font-light text-sm tracking-widest border border-zinc-800 rounded px-1.5 py-0.5 bg-zinc-900/40">GROUP</span>
@@ -125,10 +125,10 @@ export default function Home() {
         </div>
       )}
 
-      {/* Hero Section — Minimalist, Clean Obsidian Theme */}
+      {/* Hero Section – Minimalist, Clean Obsidian Theme */}
       <header className="container mx-auto px-6 py-28 text-center md:py-40 relative z-10">
         <div className="inline-flex mb-6 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs font-semibold text-emerald-400 tracking-widest uppercase">
-          🌿 Climate Tech &bull; 🔗 Web3 Trust &bull; 🪙 Sharia FinTech
+          Climate Tech &bull; Web3 Trust &bull; Sharia FinTech
         </div>
         <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-8 leading-none text-white">
           Architecting <br className="hidden md:block" />
@@ -161,7 +161,7 @@ export default function Home() {
                 Validating Technical Capacity at State Level.
               </h2>
               <p className="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
-                We design and build production-grade architectures. Through our corporate partner network, NAK Group solutions are utilized to service two massive state-level entities: **Transnet Port Terminals** (South Africa’s national logistics parastatal) and the **Department of Education** (provincial state level). 
+                We design and build production-grade architectures. Through our corporate partner network, NAK Group solutions are used to service two massive state-level entities: **Transnet Port Terminals** (South Africa’s national logistics parastatal) and the **Department of Education** (provincial state level). 
               </p>
               <p className="text-zinc-500 text-xs font-light">
                 Explore our live, active cargo tracking simulation integrating real-time IoT telemetry, predictive route deviation triggers, and automated parastatal work-order dispatch.
@@ -202,7 +202,7 @@ export default function Home() {
             <a href="https://freighter-africa.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
               <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
                 <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">🚚</div>
+                  <div className="text-2xl">🚛</div>
                   <div className="flex flex-col items-end gap-1.5">
                     <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
                       <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
@@ -250,7 +250,7 @@ export default function Home() {
             <a href="https://vouchvault.addworkssibanda.workers.dev" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
               <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
                 <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">🔑</div>
+                  <div className="text-2xl">🔒</div>
                   <div className="flex flex-col items-end gap-1.5">
                     <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
                       <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
@@ -270,7 +270,7 @@ export default function Home() {
               </div>
             </a>
 
-                        {/* Live App 4: AugmentMyTeam */}
+            {/* Live App 4: AugmentMyTeam */}
             <a href="https://augment-my-team.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
               <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
                 <div className="flex justify-between items-start mb-6">
@@ -295,12 +295,12 @@ export default function Home() {
             </a>
           </div>
 
-          {/* In Development Cards — Clean Grid */}
+          {/* In Development Cards – Clean Grid */}
           <div className="border-t border-zinc-900 pt-16">
             <h3 className="text-xs font-black mb-10 text-center text-zinc-500 uppercase tracking-widest">In Development & Stealth Channels</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">🔄</div>
+                <div className="text-zinc-300 text-xl mb-3">🛠️</div>
                 <h4 className="font-bold text-white mb-2 text-base">RentIt (Circular PropTech)</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
                   Unlocking idle capital via sharing economy principles. A hyper-local peer-to-peer asset portal for heavy machinery, utility tools, and hardware, reducing unnecessary consumer and manufacturing footprint.
@@ -314,7 +314,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">🛡️</div>
+                <div className="text-zinc-300 text-xl mb-3">📈</div>
                 <h4 className="font-bold text-white mb-2 text-base">Africa Trade (ATEP)</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
                   Sovereign multi-party trade ledger. Digitizes export compliance, custom APIs, and programmatic escrow payments between GCC buyers and verified suppliers.
@@ -337,21 +337,21 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">⏰</span>
+              <span className="text-3xl block mb-6">🕒</span>
               <h3 className="text-lg font-bold mb-3 text-white">1-Hour Timezone Sync</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 South Africa (GMT+2) operates exactly 1 hour behind the UAE (GMT+4). We share your working hours entirely—enabling instant communication, real-time standups, and zero midnight operational strain.
               </p>
             </div>
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">📉</span>
+              <span className="text-3xl block mb-6">💸</span>
               <h3 className="text-lg font-bold mb-3 text-white">60% Cost Arbitrage</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 Unlock deep, structural financial efficiency. Access native English-speaking, enterprise-hardened software engineers at a 60% reduction in burn rate compared to acquiring on-site developers in Dubai or Riyadh.
               </p>
             </div>
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">🛡️</span>
+              <span className="text-3xl block mb-6">🏗️</span>
               <h3 className="text-lg font-bold mb-3 text-white">The Venture Engine Core</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 We develop on our own proprietary framework of JWT authentication middleware, secure audit trails, and data filters, deploying stable, secure, and compliant products 40% faster than traditional developer cycles.
@@ -367,7 +367,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-black text-center mb-16 tracking-tight text-white">Custom Product Engineering</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 shadow-xl hover:border-zinc-800 transition duration-300">
-              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">⚙️</div>
+              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">💻</div>
               <h3 className="text-lg font-bold mb-4 text-white">Complex Transaction Ecosystems</h3>
               <p className="text-zinc-400 text-sm leading-relaxed font-light">We engineer highly transactional backends, multi-party automated escrow pipelines, high-frequency IoT tracking nodes, and secure, custom ERP compliance architectures.</p>
             </div>
@@ -401,10 +401,10 @@ export default function Home() {
             
             {submissionSuccess ? (
               <div className="p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-center space-y-4 animate-fadeIn">
-                <span className="text-4xl block">🎉</span>
+                <span className="text-4xl block">🚀</span>
                 <h4 className="font-bold text-lg text-white">Lead Successfully Injected!</h4>
                 <p className="text-sm text-zinc-400 leading-relaxed font-light">
-                  Thank you! Your requirements have been dispatched via Resend to our core engineering committee. We will review your technical parameters and reach out within 1 business day.
+                  Thank you! Your requirements have been dispatched to our team. We will review your technical parameters and reach out shortly.
                 </p>
               </div>
             ) : (
@@ -460,20 +460,6 @@ export default function Home() {
                       <option value="Demandz">Demandz (Sharia FinTech)</option>
                     </select>
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Lead Quality / Est. Budget (USD)</label>
-                  <select 
-                    value={budgetRange}
-                    onChange={(e) => setBudgetRange(e.target.value)}
-                    className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-zinc-300 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300"
-                  >
-                    <option value="Undetermined">Undetermined / Discovery Phase</option>
-                    <option value="<$10k">Less than $10,000 USD</option>
-                    <option value="$10k-$50k">$10,000 - $50,000 USD</option>
-                    <option value="$50k+">Greater than $50,000 USD</option>
-                  </select>
                 </div>
 
                 <div>
