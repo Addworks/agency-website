@@ -120,6 +120,7 @@ export async function POST(request: Request) {
           }
         };
 
+        // Create contact
         const hsResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
           method: 'POST',
           headers: {
@@ -129,8 +130,46 @@ export async function POST(request: Request) {
           body: JSON.stringify(hubspotPayload)
         });
 
-        hubspotResult = await hsResponse.json();
+        const hsData = await hsResponse.json();
         hubspotSuccess = hsResponse.ok;
+        hubspotResult = hsData;
+
+        // Auto-create a linked Deal for inbound web inquiries to match scrapers!
+        if (hsResponse.ok && hsData.id) {
+          try {
+            const dealPayload = {
+              properties: {
+                dealname: `${company || firstName}'s Web Inquiry - ${productInterest || 'Custom Dev'}`,
+                dealstage: "appointmentscheduled", // Maps to '1 - Lead Generated'
+                pipeline: "default"
+              },
+              associations: [
+                {
+                  to: {
+                    id: hsData.id
+                  },
+                  types: [
+                    {
+                      associationCategory: "HUBSPOT_DEFINED",
+                      associationTypeId: 3 // Deal -> Contact
+                    }
+                  ]
+                }
+              ]
+            };
+
+            await fetch('https://api.hubapi.com/crm/v3/objects/deals', {
+              method: 'POST',
+              headers: {
+                'Authorization': `Bearer ${hubspotAccessToken}`,
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(dealPayload)
+            });
+          } catch (dealErr: any) {
+            console.error('[HubSpot Inbound Sync] Failed to auto-generate linked deal:', dealErr);
+          }
+        }
       } catch (err: any) {
         hubspotResult = err.message || err;
       }
