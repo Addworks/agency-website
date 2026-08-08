@@ -84,8 +84,11 @@ export default function Home() {
 
       {/* Navigation – Ultra Clean, Razor Sharp */}
       <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-20 backdrop-blur-md bg-slate-950/60 sticky top-0 border-b border-zinc-900">
-        <div className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-          NAK <span className="text-emerald-500 font-light text-sm tracking-widest border border-zinc-800 rounded px-1.5 py-0.5 bg-zinc-900/40">GROUP</span>
+        <div className="text-2xl font-black text-white tracking-tight flex items-center gap-1.5 group cursor-pointer">
+          <span className="bg-gradient-to-r from-zinc-100 to-zinc-300 bg-clip-text text-transparent">NAK</span>
+          <span className="text-emerald-500 font-extrabold text-[11px] tracking-[0.2em] uppercase border border-emerald-500/30 rounded-md px-2.5 py-0.5 bg-emerald-950/20 backdrop-blur shadow-[0_0_15px_rgba(16,185,129,0.1)] transition-all duration-300 group-hover:border-emerald-500/60 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.25)]">
+            TECH GROUP
+          </span>
         </div>
         
         <div className="hidden md:flex space-x-10">
