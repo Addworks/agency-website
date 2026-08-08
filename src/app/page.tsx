@@ -504,7 +504,7 @@ export default function Home() {
             )}
           </div>
           <p className="text-zinc-500 mt-12 text-center text-xs tracking-wider">
-            OR INQUIRE DIRECTLY VIA <a href="mailto:hello@naktechgroup.com" className="text-emerald-400 hover:underline">HELLO@NAKGROUP.COM</a>
+            OR INQUIRE DIRECTLY VIA <a href="mailto:hello@naktechgroup.com" className="text-emerald-400 hover:underline">HELLO@NAKTECHGROUP.COM</a>
           </p>
         </div>
       </footer>
