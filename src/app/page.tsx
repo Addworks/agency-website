@@ -122,23 +122,23 @@ export default function Home() {
       {/* Hero Section – Minimalist, Clean Obsidian Theme */}
       <header className="container mx-auto px-6 py-28 text-center md:py-40 relative z-10">
         <div className="inline-flex mb-6 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs font-semibold text-emerald-400 tracking-widest uppercase">
-          Climate Tech &bull; Web3 Trust &bull; Sharia FinTech
+          Sovereign Water Intelligence &bull; Climate Tech &bull; Nearshore R&D
         </div>
         <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-8 leading-none text-white">
-          Architecting <br className="hidden md:block" />
+          Sovereign <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-200">
-            Global Digital Corridors.
+            Resource Intelligence.
           </span>
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-          NAK Tech Group is a premium, dual-engine **Venture Studio**. We deliver elite nearshore software engineering to GCC enterprises with zero timezone friction, while building and scaling a proprietary, self-funded portfolio.
+          NAK Tech Group is a dual-engine venture studio. We power **AquaFlow**, the GCC’s leading IoT water security platform, while providing elite nearshore engineering to high-growth GCC startups.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <a href="#contact" className="bg-zinc-100 hover:bg-white text-zinc-950 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition duration-300 shadow-xl border border-white">
-            Secure Partnership
+          <a href="#portfolio" className="bg-zinc-100 hover:bg-white text-zinc-950 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest transition duration-300 shadow-xl border border-white">
+            Explore AquaFlow
           </a>
-          <a href="#portfolio" className="bg-zinc-900/60 hover:bg-zinc-900 text-zinc-300 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest border border-zinc-800 transition backdrop-blur-sm">
-            Explore Portfolio
+          <a href="#contact" className="bg-zinc-900/60 hover:bg-zinc-900 text-zinc-300 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest border border-zinc-800 transition backdrop-blur-sm">
+            Partner with us
           </a>
         </div>
       </header>
@@ -265,7 +265,7 @@ export default function Home() {
             </a>
 
             {/* Live App 4: AugmentMyTeam */}
-            <a href="https://augment-my-team.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
+            <a href="https://augmentmyteam.com/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
               <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
                 <div className="flex justify-between items-start mb-6">
                   <div className="text-2xl">💼</div>
@@ -412,7 +412,7 @@ export default function Home() {
                       value={contactName}
                       onChange={(e) => setContactName(e.target.value)}
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
-                      placeholder="Addworks Sibanda"
+                      placeholder="John Doe"
                     />
                   </div>
                   <div>
@@ -423,7 +423,7 @@ export default function Home() {
                       value={contactEmail}
                       onChange={(e) => setContactEmail(e.target.value)}
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
-                      placeholder="addworks@naktechgroup.com"
+                      placeholder="john@example.com"
                     />
                   </div>
                 </div>
@@ -436,7 +436,7 @@ export default function Home() {
                       value={contactCompany}
                       onChange={(e) => setContactCompany(e.target.value)}
                       className="w-full bg-zinc-950 border border-zinc-800/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 transition duration-300" 
-                      placeholder="NAK Tech Group Ltd"
+                      placeholder="Acme Corp"
                     />
                   </div>
                   <div>
