@@ -155,10 +155,10 @@ export default function Home() {
                 Validating Technical Capacity at State Level.
               </h2>
               <p className="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
-                We design and build production-grade architectures. Through our corporate partner network, NAK Tech Group solutions are used to service two massive state-level entities: **Transnet Port Terminals** (South Africa’s national logistics parastatal) and the **Department of Education** (provincial state level). 
+                AquaFlow is built on the NAK "Venture Engine Core"—the same battle-tested architecture trusted at a state-level to service massive entities like **Transnet Port Terminals** and the **Department of Education**.
               </p>
               <p className="text-zinc-500 text-xs font-light">
-                Explore our live, active cargo tracking simulation integrating real-time IoT telemetry, predictive route deviation triggers, and automated parastatal work-order dispatch.
+                Our IoT water security telemetry and predictive maintenance systems are engineered to ADGM and GCC data sovereignty standards.
               </p>
             </div>
             <div className="w-full lg:w-auto shrink-0 space-y-4">
@@ -187,131 +187,106 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight text-white">Venture Portfolio</h2>
             <p className="text-lg text-zinc-400 font-light">
-              We categories our proprietary, live SaaS platforms across three core verticals. We bring identical entrepreneurial skin-in-the-game to your custom requirements.
+              We specialize in high-integrity engineering for critical infrastructure and enterprise talent corridors.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-            {/* Live App 1: Freighter Africa */}
-            <a href="https://freighter-africa.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
-              <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">🚛</div>
-                  <div className="flex flex-col items-end gap-1.5">
-                    <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
-                    </span>
-                    <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
-                      Climate Tech / Green Logistics
-                    </span>
+          <div className="space-y-8 mb-20">
+            {/* Flagship Product: AquaFlow (Highlighted) */}
+            <div className="max-w-5xl mx-auto">
+              <a href="https://ucp-aqua-flow.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-1 rounded-3xl bg-gradient-to-br from-emerald-500/20 via-zinc-800 to-zinc-950 hover:from-emerald-500/40 transition duration-500">
+                <div className="bg-zinc-950 rounded-[calc(1.5rem-1px)] p-10 md:p-14 border border-emerald-500/10 group-hover:border-emerald-500/30 transition duration-500 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full filter blur-[80px] -mr-32 -mt-32"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex justify-between items-start mb-8">
+                      <div className="text-4xl">💧</div>
+                      <div className="flex flex-col items-end gap-2">
+                        <span className="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Flagship Venture
+                        </span>
+                        <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em]">
+                          Sovereign Water Intelligence
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <div className="max-w-2xl">
+                      <h3 className="text-3xl md:text-5xl font-black mb-6 text-white tracking-tight">AquaFlow IoT</h3>
+                      <p className="text-zinc-400 text-lg md:text-xl font-light leading-relaxed mb-10">
+                        Protecting the GCC’s most precious resource. AquaFlow integrates AI-driven IoT smart meter telemetry to isolate infrastructure leaks in under 5 minutes, mitigating Non-Revenue Water (NRW) loss at scale.
+                      </p>
+                      <div className="inline-flex items-center gap-3 text-emerald-400 font-black text-sm uppercase tracking-[0.2em] group-hover:gap-5 transition-all duration-300">
+                        Launch Global Platform <span>&rarr;</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">Freighter Africa</h3>
-                <p className="text-zinc-400 text-sm font-light leading-relaxed mb-6">
-                  Decarbonizing industrial shipping channels. Our smart logistics load board eliminates "deadhead" (empty return) miles, matching B2B cargo to return legs—slashing truck fuel use and Scope 3 carbon emissions.
-                </p>
-                <div className="text-zinc-300 group-hover:text-emerald-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
-                  Launch Platform <span>&rarr;</span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
 
-            {/* Live App 2: AquaFlow */}
-            <a href="https://ucp-aqua-flow.vercel.app/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
-              <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">💧</div>
-                  <div className="flex flex-col items-end gap-1.5">
-                    <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
-                    </span>
-                    <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
-                      Climate Tech / Infrastructure
-                    </span>
+            {/* Secondary Highlight: AugmentMyTeam */}
+            <div className="max-w-5xl mx-auto">
+              <a href="https://augmentmyteam.com/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
+                <div className="bg-zinc-950 rounded-2xl p-8 md:p-12 border border-zinc-900 group-hover:border-transparent transition duration-300">
+                  <div className="flex justify-between items-start mb-8">
+                    <div className="text-3xl">🚀</div>
+                    <div className="flex flex-col items-end gap-1.5">
+                      <span className="bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-md uppercase tracking-wider">
+                        Active Ecosystem
+                      </span>
+                      <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
+                        Nearshore R&D Corridor
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">AugmentMyTeam</h3>
+                  <p className="text-zinc-400 text-base md:text-lg font-light leading-relaxed mb-8 max-w-2xl">
+                    Providing high-growth GCC startups with elite South African software engineers. 100% timezone sync with 60% operational cost arbitrage.
+                  </p>
+                  <div className="text-zinc-300 group-hover:text-blue-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
+                    Enter Portal <span>&rarr;</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">AquaFlow IoT</h3>
-                <p className="text-zinc-400 text-sm font-light leading-relaxed mb-6">
-                  Mitigating global water scarcity risks. AquaFlow bridges with IoT smart meter telemetry in high-density property assets to isolate unmonitored leaks under 5 minutes and run automated allocation routines.
-                </p>
-                <div className="text-zinc-300 group-hover:text-emerald-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
-                  Launch Platform <span>&rarr;</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Live App 3: VouchVault */}
-            <a href="https://vouchvault.addworkssibanda.workers.dev" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
-              <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">🔒</div>
-                  <div className="flex flex-col items-end gap-1.5">
-                    <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse"></span> Staged
-                    </span>
-                    <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
-                      Web3 Trust / DID Framework
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">VouchVault</h3>
-                <p className="text-zinc-400 text-sm font-light leading-relaxed mb-6">
-                  Eliminating credentials fraud. A programmatically secure background verification vault. Uses secure digital footprint audit checks to formulate cryptographically signed candidate employment proofs.
-                </p>
-                <div className="text-zinc-300 group-hover:text-emerald-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
-                  Launch Platform <span>&rarr;</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Live App 4: AugmentMyTeam */}
-            <a href="https://augmentmyteam.com/" target="_blank" rel="noopener noreferrer" className="group block p-0.5 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-950 hover:from-zinc-700 hover:to-zinc-900 transition duration-300">
-              <div className="h-full bg-zinc-950 rounded-2xl p-8 border border-zinc-900 group-hover:border-transparent transition duration-300">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="text-2xl">💼</div>
-                  <div className="flex flex-col items-end gap-1.5">
-                    <span className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Staged
-                    </span>
-                    <span className="text-[9px] font-medium text-zinc-500 uppercase tracking-widest">
-                      SaaS / GCC Nearshore Talent
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-white">AugmentMyTeam</h3>
-                <p className="text-zinc-400 text-sm font-light leading-relaxed mb-6">
-                  Bypassing the GCC tech talent crisis. We supply high-growth startups in Abu Dhabi and Riyadh with pre-vetted, elite South African software engineers operating in your exact timezone with a 60% operational cost arbitrage.
-                </p>
-                <div className="text-zinc-300 group-hover:text-emerald-400 text-sm font-bold uppercase tracking-widest transition duration-300 flex items-center gap-2">
-                  Launch Platform <span>&rarr;</span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           {/* In Development Cards – Clean Grid */}
           <div className="border-t border-zinc-900 pt-16">
             <h3 className="text-xs font-black mb-10 text-center text-zinc-500 uppercase tracking-widest">In Development & Stealth Channels</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Stealth 1: VouchVault */}
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">🛠️</div>
-                <h4 className="font-bold text-white mb-2 text-base">RentIt (Circular PropTech)</h4>
+                <div className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-3">Stealth / Web3</div>
+                <h4 className="font-bold text-white mb-2 text-base">VouchVault</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
-                  Unlocking idle capital via sharing economy principles. A hyper-local peer-to-peer asset portal for heavy machinery, utility tools, and hardware, reducing unnecessary consumer and manufacturing footprint.
+                  Cryptographically signed candidate verification. Building the decentralized identity (DID) trust layer for the global labor market.
                 </p>
               </div>
+              
+              {/* Stealth 2: Freighter Africa */}
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">🪙</div>
-                <h4 className="font-bold text-white mb-2 text-base">Demandz (FinTech)</h4>
+                <div className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-3">Stealth / Logistics</div>
+                <h4 className="font-bold text-white mb-2 text-base">Freighter Africa</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
-                  Sharia-compliant procurement demand coordination. Pools SME buying force to execute programmatic reverse-auctions, securing up to 20% savings.
+                  Decarbonizing industrial shipping via automated load-matching, eliminating empty return miles to slash Scope 3 emissions.
                 </p>
               </div>
+
               <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
-                <div className="text-zinc-300 text-xl mb-3">📈</div>
+                <div className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-3">Development / FinTech</div>
+                <h4 className="font-bold text-white mb-2 text-base">Demandz</h4>
+                <p className="text-xs text-zinc-500 font-light leading-relaxed">
+                  Sharia-compliant procurement demand coordination. Pools SME buying force to execute programmatic reverse-auctions.
+                </p>
+              </div>
+
+              <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 hover:border-zinc-800 transition duration-300">
+                <div className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-3">Development / Trade</div>
                 <h4 className="font-bold text-white mb-2 text-base">Africa Trade (ATEP)</h4>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed">
-                  Sovereign multi-party trade ledger. Digitizes export compliance, custom APIs, and programmatic escrow payments between GCC buyers and verified suppliers.
+                  Sovereign multi-party trade ledger for GCC-Africa trade corridors, digitizing export compliance and programmable escrow.
                 </p>
               </div>
             </div>
@@ -331,21 +306,21 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">🕒</span>
+              <span className="text-3xl block mb-6">⏰</span>
               <h3 className="text-lg font-bold mb-3 text-white">1-Hour Timezone Sync</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 South Africa (GMT+2) operates exactly 1 hour behind the UAE (GMT+4). We share your working hours entirely—enabling instant communication, real-time standups, and zero midnight operational strain.
               </p>
             </div>
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">💸</span>
+              <span className="text-3xl block mb-6">💰</span>
               <h3 className="text-lg font-bold mb-3 text-white">60% Cost Arbitrage</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 Unlock deep, structural financial efficiency. Access native English-speaking, enterprise-hardened software engineers at a 60% reduction in burn rate compared to acquiring on-site developers in Dubai or Riyadh.
               </p>
             </div>
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900">
-              <span className="text-3xl block mb-6">🏗️</span>
+              <span className="text-3xl block mb-6">⚙️</span>
               <h3 className="text-lg font-bold mb-3 text-white">The Venture Engine Core</h3>
               <p className="text-zinc-400 text-sm font-light leading-relaxed">
                 We develop on our own proprietary framework of JWT authentication middleware, secure audit trails, and data filters, deploying stable, secure, and compliant products 40% faster than traditional developer cycles.
@@ -361,12 +336,12 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-black text-center mb-16 tracking-tight text-white">Custom Product Engineering</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 shadow-xl hover:border-zinc-800 transition duration-300">
-              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">💻</div>
+              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">🏗️</div>
               <h3 className="text-lg font-bold mb-4 text-white">Complex Transaction Ecosystems</h3>
               <p className="text-zinc-400 text-sm leading-relaxed font-light">We engineer highly transactional backends, multi-party automated escrow pipelines, high-frequency IoT tracking nodes, and secure, custom ERP compliance architectures.</p>
             </div>
             <div className="p-8 bg-zinc-950 rounded-2xl border border-zinc-900 shadow-xl hover:border-zinc-800 transition duration-300">
-              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">👥</div>
+              <div className="w-12 h-12 bg-zinc-900 text-zinc-100 rounded-xl flex items-center justify-center mb-6 text-xl border border-zinc-800">🧠</div>
               <h3 className="text-lg font-bold mb-4 text-white">Fractional Technical Leadership</h3>
               <p className="text-zinc-400 text-sm leading-relaxed font-light">Seamlessly inject senior expertise. We provide elite engineering leads, technical database refactoring sprints, and fractional CTO consulting to navigate complex architectural scale.</p>
             </div>
@@ -395,7 +370,7 @@ export default function Home() {
             
             {submissionSuccess ? (
               <div className="p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-center space-y-4 animate-fadeIn">
-                <span className="text-4xl block">🚀</span>
+                <span className="text-4xl block">✨</span>
                 <h4 className="font-bold text-lg text-white">Lead Successfully Injected!</h4>
                 <p className="text-sm text-zinc-400 leading-relaxed font-light">
                   Thank you! Your requirements have been dispatched to our team. We will review your technical parameters and reach out shortly.
