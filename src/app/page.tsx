@@ -75,7 +75,8 @@ export default function Home() {
 
       {/* Navigation – Ultra Clean, Razor Sharp */}
       <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-20 backdrop-blur-md bg-slate-950/60 sticky top-0 border-b border-zinc-900">
-        <div className="text-2xl font-black text-white tracking-tight flex items-center gap-1.5 group cursor-pointer">
+        <div className="text-2xl font-black text-white tracking-tight flex items-center gap-2.5 group cursor-pointer">
+          <img src="/NAK_Tech_Group_Logo.png" alt="NAK Tech Group Logo" className="w-8 h-8 object-contain" />
           <span className="bg-gradient-to-r from-zinc-100 to-zinc-300 bg-clip-text text-transparent">NAK</span>
           <span className="text-emerald-500 font-extrabold text-[11px] tracking-[0.2em] uppercase border border-emerald-500/30 rounded-md px-2.5 py-0.5 bg-emerald-950/20 backdrop-blur shadow-[0_0_15px_rgba(16,185,129,0.1)] transition-all duration-300 group-hover:border-emerald-500/60 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.25)]">
             TECH GROUP
@@ -200,7 +201,7 @@ export default function Home() {
                   
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-8">
-                      <div className="text-4xl">💧</div>
+                      <img src="/AquaFlow_Logo.png" alt="AquaFlow Logo" className="w-12 h-12 object-contain" />
                       <div className="flex flex-col items-end gap-2">
                         <span className="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest flex items-center gap-2">
                           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Flagship Venture
